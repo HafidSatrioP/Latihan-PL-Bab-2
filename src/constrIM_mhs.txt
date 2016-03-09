@@ -1,0 +1,23 @@
+/*
+Nama        : Hafid Satrio Priambodo
+NIM         : 155150207111059
+Kelas       : IF - H
+*/
+
+public class constrIM_mhs {
+    String nim,nama;
+    int jml_mhs;
+    
+    void mhs(){
+        this.nim = nim;
+        this.nama = nama;
+    }
+
+    int getJml_mhs(int n) {
+        return jml_mhs = n;
+    } 
+    
+    void display(){
+        System.out.print(nama+" ");
+    }
+}

@@ -1,0 +1,31 @@
+/*
+Nama        : Hafid Satrio Priambodo
+NIM         : 155150207111059
+Kelas       : IF - H
+*/
+
+public class constrIM_lap {
+    int v, jp, jw;
+    private int ul;
+    
+    public constrIM_lap(){
+        this.jp = jp;
+        this.jw = jw;
+    }
+
+    int ul(int p, int l){
+        return ul = 2*(p+l);
+    }
+    
+    int jp(int putar){
+        return jp = ul * putar;
+    }
+    
+    public int v(int jWaktu){
+        return v = ul / jWaktu;
+    }   
+    
+    void displayLap(){
+        System.out.println(jp);
+    }
+}

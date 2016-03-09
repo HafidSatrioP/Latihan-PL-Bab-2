@@ -1,0 +1,6 @@
+Identifikasi
+
+Class 	: constrIM_mhs, constrIM_lap
+Object 	: cim[], mhs[]
+Atribut	: v, jp, jw, ul, nama, nim, jml_mhs
+Method	: mhs, ul, jp, v, displayLap, display

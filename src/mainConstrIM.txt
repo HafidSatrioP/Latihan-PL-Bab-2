@@ -1,0 +1,54 @@
+/*
+Nama        : Hafid Satrio Priambodo
+NIM         : 155150207111059
+Kelas       : IF - H
+*/
+
+import java.util.Scanner;
+
+public class mainConstrIM {
+    public static void main (String[] args){
+        Scanner in = new Scanner(System.in);
+        
+        int n = in.nextInt();
+        int p = in.nextInt();
+        int l = in.nextInt();
+        
+        constrIM_mhs[] mhs = new constrIM_mhs[n];
+        constrIM_lap[] cim = new constrIM_lap[n];
+        
+        for (int i = 0; i < mhs.length; i++) {
+            mhs[i] = new constrIM_mhs();
+            cim[i] = new constrIM_lap();
+            
+            cim[i].ul(p,l);
+            
+            mhs[i].nim = in.next();
+            mhs[i].nama = in.next();
+            
+            mhs[i].mhs();
+            
+            int putar = in.nextInt();
+            int jWaktu = in.nextInt();
+            
+            cim[i].jp(putar);
+            cim[i].v(jWaktu);
+        }
+        
+        int temp = 0;
+        int on = 0;
+        for (int i = 0; i < cim.length; i++) {
+            if (cim[i].v > on) {
+                on = cim[i].v;
+                temp = i;
+            }
+        }
+        
+        for (int i = 0; i < mhs.length; i++) {
+            mhs[i].display();
+            cim[i].displayLap();
+        }
+        System.out.println("");
+        System.out.println(mhs[temp].nama);
+    }
+}
